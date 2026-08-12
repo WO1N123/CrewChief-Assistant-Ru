@@ -1,0 +1,47 @@
+# Build output
+bin/
+obj/
+output/
+.build/
+publish/
+artifacts/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# .NET
+*.dll
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+
+# Installer / generated binaries
+*.exe
+*.msi
+
+# Python caches / environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Builder logs
+*.log
+python-install.log
+python-repair.log
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Archives belong in Releases, not Git history
+*.zip
+*.7z
+*.rar
