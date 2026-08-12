@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "version": "0.9.4",
+  "tag": "v0.9.4",
+  "asset": "CrewChiefRU_Setup.exe",
+  "mandatory": false,
+  "minimumWindowsBuild": 17763,
+  "notes": "Текущая стабильная версия CrewChief Assistant RU."
+}
