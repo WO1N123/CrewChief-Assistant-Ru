@@ -1,47 +1,36 @@
-# Build output
-bin/
-obj/
+# Build outputs
 output/
-.build/
-publish/
-artifacts/
+**/bin/
+**/obj/
+**/publish/
 
-# Visual Studio / Rider / VS Code
+# Builder/runtime caches
+files/tools/
+*.log
+*.tmp
+*.temp
+
+# Generated voice/model data
+files/voice*/
+files/models/
+*.wav
+
+# Packages and binaries
+*.exe
+*.dll
+*.pdb
+*.zip
+*.7z
+*.nupkg
+
+# IDE
 .vs/
 .idea/
 .vscode/
 *.user
 *.suo
-*.userosscache
-*.sln.docstates
-
-# .NET
-*.dll
-*.pdb
-*.deps.json
-*.runtimeconfig.json
-
-# Installer / generated binaries
-*.exe
-*.msi
-
-# Python caches / environments
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# Builder logs
-*.log
-python-install.log
-python-repair.log
 
 # OS
 Thumbs.db
-desktop.ini
+Desktop.ini
 .DS_Store
-
-# Archives belong in Releases, not Git history
-*.zip
-*.7z
-*.rar

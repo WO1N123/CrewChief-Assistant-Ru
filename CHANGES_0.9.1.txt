@@ -1,0 +1,11 @@
+CREWCHIEF RU BUILDER 0.9.1
+
+UI CONTROLS FIX
+
+- Replaced the legacy Windows/WPF vertical and horizontal scroll bars with a custom dark rounded design.
+- Removed the bright system scrollbar rail and arrow-button appearance.
+- Added hover and drag states using the current accent palette.
+- Replaced the standard volume slider with a custom rounded track and accent thumb.
+- Added a live percentage value next to the volume label.
+- Applied the modern scrollbar style to both the main application and the installer.
+- Output remains clean: output\CrewChiefRU_Setup.exe only.

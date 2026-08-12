@@ -1,0 +1,11 @@
+﻿CREWCHIEF RU BUILDER 0.9.3 — PORTABLE PYTHON FIX
+
+Исправлено:
+- сборщик больше не вызывает py.exe и не ищет Python в PATH или реестре;
+- Windows Installer для Python больше не запускается, поэтому ошибки 1603 и повреждённая регистрация Python не влияют на сборку;
+- скачивается официальный автономный Python 3.11.9 ZIP с python.org;
+- архив проверяется по SHA-256 из официального windows-3.11.9.json;
+- Python распаковывается только в %LOCALAPPDATA%\CrewChiefRUAssistant\builder-tools\python311-portable;
+- пользовательский Python, PATH, реестр и Python Launcher не изменяются;
+- pip и пакеты генератора устанавливаются только внутрь переносимого runtime;
+- все исправления интерфейса и распознавания из 0.9.1/0.9.2 сохранены.

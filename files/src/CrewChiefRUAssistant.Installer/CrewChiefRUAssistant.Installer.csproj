@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <!-- The public Setup remains one self-contained EXE. The SDK-generated
+         Win32 manifest is used to avoid side-by-side manifest conflicts. -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <IncludeAllContentForSelfExtract>false</IncludeAllContentForSelfExtract>
+    <EnableCompressionInSingleFile>false</EnableCompressionInSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishReadyToRun>false</PublishReadyToRun>
+
+    <AssemblyName>CrewChiefRU_Setup</AssemblyName>
+    <RootNamespace>CrewChiefRUAssistant.Installer</RootNamespace>
+    <Version>0.9.4</Version>
+    <FileVersion>0.9.4.0</FileVersion>
+    <AssemblyVersion>0.9.4.0</AssemblyVersion>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <NuGetAudit>false</NuGetAudit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CrewChiefRUAssistant\Shared\CrewChiefMqttConfigurator.cs"
+             Link="Shared\CrewChiefMqttConfigurator.cs" />
+    <EmbeddedResource Include="Payload\payload.zip"
+                      LogicalName="CrewChiefRUAssistant.Installer.payload.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+</Project>
